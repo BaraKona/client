@@ -4,7 +4,7 @@
         <div class = "nwhiteline"></div>
         <h1> Novum insights newsletter </h1>
         <h2> Subscribe to our Newsletter </h2>
-        <input type="email" id = "email" name="email" class= "inputEmail" placeholder = "Enter your work email" v-model="email">
+        <input type="text" id = "email" name="email" class= "inputEmail" placeholder = "Enter your work email" v-model="text">
         <input type="submit" class = "submit" value = "START NOW" v-on:click = "createPost">
     </section>
 </template>
@@ -16,9 +16,7 @@ export default {
   name: 'PostComponent',
   data(){
     return {
-      posts: [],
-      error: '',
-      email: ''
+      text: ''
     }
   },
   async created(){
@@ -30,7 +28,7 @@ export default {
   },
   methods: {
     async createPost() {
-      await PostService.insertPost(this.email);
+      await PostService.insertPost(this.text);
       this.posts = await PostService.getPosts();
     }
   }

@@ -32,8 +32,8 @@ export default {
   name: 'PostComponent',
   data(){
     return {
-      posts: [],
-      error: '',
+      //posts: [],
+      error: '', 
       text: ''
     }
   },
