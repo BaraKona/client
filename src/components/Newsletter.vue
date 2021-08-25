@@ -4,7 +4,7 @@
         <div class = "nwhiteline"></div>
         <h1> Novum insights newsletter </h1>
         <h2> Subscribe to our Newsletter </h2>
-        <input type="text" id = "email" name="email" class= "inputEmail" placeholder = "Enter your work email" v-model="text">
+        <input type="text" id = "email" name="email" class= "inputEmail" placeholder = "Enter your work email" v-model="text" pattern="^[a-zA-Z0-9]+@domain\.[a-zA-z]+$" required minlength="5">
         <input type="submit" class = "submit" value = "START NOW" v-on:click = "createPost">
     </section>
 </template>
@@ -76,7 +76,7 @@ export default {
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.144);
     border: 0px;
     font-size: 20px;
-    height: 80px;
+    height: 45px;
     padding: 20px;
 }
 

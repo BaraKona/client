@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <PostComponent />
+    <!--<PostComponent />-->
     <Navigation />
     <Dashboardbackground />
     <Dashboard />
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import PostComponent from './components/PostComponent.vue'
+//import PostComponent from './components/PostComponent.vue'
 import Navigation from './components/Navigation.vue'
 import Dashboardbackground from './components/Dashboard-background.vue'
 import Dashboard from './components/Dashboard.vue'
@@ -29,7 +29,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    PostComponent,
+    //PostComponent,
     Navigation,
     Dashboardbackground,
     Dashboard,

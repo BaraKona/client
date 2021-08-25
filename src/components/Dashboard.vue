@@ -64,8 +64,8 @@
 }
 
 a.dbutton:link, a.dbutton:visited {
-    width: 55%;
-    height: 90px;
+    width: 320px;
+    height: 70px;
     background-color: #FF9C5F;;
     color: white;
     padding-top: 25px;
