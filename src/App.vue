@@ -1,28 +1,60 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PostComponent />
+    <Navigation />
+    <Dashboardbackground />
+    <Dashboard />
+    <Novum />
+    <News />
+    <Community />
+    <NewsletterBackground />
+    <Newsletter/>
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PostComponent from './components/PostComponent.vue'
+import Navigation from './components/Navigation.vue'
+import Dashboardbackground from './components/Dashboard-background.vue'
+import Dashboard from './components/Dashboard.vue'
+import Novum from './components/Novum.vue'
+import News from './components/News'
+import Community from './components/Community'
+import NewsletterBackground from './components/NewsletterBackground.vue'
+import Newsletter from './components/Newsletter.vue'
+import Footer from './components/Footer.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PostComponent,
+    Navigation,
+    Dashboardbackground,
+    Dashboard,
+    Novum, 
+    News,
+    Community,
+    NewsletterBackground,
+    Newsletter,
+    Footer
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  box-sizing: border-box;
 }
+body{
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding:0;
+} 
 </style>
