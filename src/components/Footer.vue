@@ -15,7 +15,7 @@
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(5, 1fr);
     column-gap: 25px;
-    height: 23vh;
+    height: 20vh;
     background-color: #120040;
     font-size: 18px;
     letter-spacing: 2px;
@@ -46,5 +46,23 @@
     color:white;
     grid-row: 3;
     grid-column: 20;
+}
+
+@media (max-width: 830px) {
+  .footer p{
+      grid-row: 4;
+      grid-column: 1 / 6;
+      text-align: center;
+  }
+  .privacy{
+    
+    grid-row: 3;
+    grid-column: 4;
+}
+  .privacy1{
+    
+    grid-row: 3;
+    grid-column: 5;
+}
 }
 </style>

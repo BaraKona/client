@@ -35,7 +35,7 @@
     height: 85vh;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     column-gap: 5%;
     row-gap: 5%;
     margin: 150px;
@@ -73,37 +73,40 @@
 
 .comcard1{
     grid-column: 1;
-    grid-row: 2 / 4;
+    grid-row: 2;
     border-radius: 10px;
     -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.473);
     -moz-box-shadow: 0 0 5px 2px rgb(0, 0, 0);
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.144);
-    padding-bottom: 450px;
+    min-height: 420px;
+    min-width: 480px;
 }
 
 .comcard2{
     grid-column: 2;
-    grid-row: 2 / 4;
+    grid-row: 2;
     border-radius: 10px;
     -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.473);
     -moz-box-shadow: 0 0 5px 2px rgb(0, 0, 0);
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.144);
-    padding-bottom: 450px;
+    min-height: 420px;
+    min-width: 480px;
 }
 
 .comcard3{
     grid-column: 3;
-    grid-row: 2 / 4;
+    grid-row: 2;
     border-radius: 10px;
     -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.473);
     -moz-box-shadow: 0 0 5px 2px rgb(0, 0, 0);
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.144);
-    padding-bottom: 450px;
+    min-height: 420px;
+    min-width: 480px;
 }
 
 
 a.mbutton:link, a.mbutton:visited {
-    width: 55%;
+    width: 280px;
     height: 70px;
     background-color:  #120040;
     color: white;
@@ -118,7 +121,7 @@ a.mbutton:link, a.mbutton:visited {
     border-color: black; */
     font-size: 30px;
     margin-left: 10px;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 .mbshadow{
@@ -126,20 +129,51 @@ a.mbutton:link, a.mbutton:visited {
     border-width: 2.5px;
     border-style: solid;
     border-color: black;
-    height: 90px;
-    width: 265px;
+    height: 85px;
+    width: 280px;
     border-radius: 20px;
-    margin-left: 105px;
+    margin-left: 100px;
     position:absolute;
-    top: 480px;
+    top: 455px;
     z-index: 0;
 }
 
 a.mbutton:hover, a.mbutton:active{
     background-color: #FF9C5F;
-    margin-left: -5px;
+    margin-left: 0px;
     margin-top: 41px;
     z-index: 3;
+    height:65px;
+    width:285px;
 }
 
+@media screen and (max-width: 1650px){
+    .community{
+        height: 182vh;
+        grid-gap: 20px;
+        margin-bottom:0px;
+    }
+    .comcard1{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .mbshadow{
+        display:none;
+    }
+    .comcard3{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .mbshadow{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .community{
+        margin: 0px;
+    }
+
+
+}
 </style>

@@ -91,6 +91,17 @@ export default {
     border: 0px;
     border-radius: 10px;
     margin-left: 115px;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .inputEmail{
+    font-size: 16px;
+  }
+
+  .newsletter h2{
+    padding-top:70px;
+  }
 }
 
 </style>

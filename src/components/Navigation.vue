@@ -3,15 +3,15 @@
     <div class = "navbar">
         <div class="container flex">
             <h1>
-                <span class = "text1"> Novum </span>
+                <span class = "text1"> Novum <br></span>
                 <span class = "text2">Insights</span>
             </h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="Categories">Categories</a></li>
-                    <li><a href="Items">Items</a></li>
-                    <li><a href="about">About</a></li>
+                    <li><a href="index.html" class = "dashboardb">Dashboard</a></li>
+                    <li><a href="Categories" class = "categoriesb">Categories</a></li>
+                    <li><a href="Items" class = "itemsb">Items</a></li>
+                    <li><a href="about" class = "aboutb">About</a></li>
                     <li><a href="login" class = "login">Login</a></li>
                 </ul>
             </nav>
@@ -40,15 +40,27 @@ body{
     background: none;
     background-color: transparent;
     color: #fff;
-    height: 80px;
+    height: 110px;
     text-transform: uppercase;
     position: absolute;
     z-index: 2;
     width: 100%;
+    
   }
-  
+  .text1{
+    font-size: 45px;
+    text-transform: lowercase;
+    font-weight:bolder;
+    color:#fff;
+  }
+  .text2{
+    font-weight: lighter;
+    text-transform: lowercase;
+    font-size: 45px;
+    line-height: 5px;
+  }
   .navbar ul {
-    display: flex;
+    display: inline-flex;
   }
   .navbar h1 {
     color : rgb(255, 255, 255, 0.8);
@@ -112,30 +124,58 @@ body{
 
 
   /* Tablets and under */
-@media (max-width: 768px) {
-    .grid,
-    .stats .grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+@media (max-width: 1000px) {
+    .navbar ul{
+      padding:0;
+      margin:0;
     }
-  
+     .navbar h1{
+       text-align:center;
+     }
+    .navbar{
+      position: relative;
+      height: 100px;
+    }
+    a.login{
+      padding: 0;
+      margin: 0;
+    }
+    a.dashboardb{
+      display: none;
+    }
+    
+  }
+  @media (max-width: 830px) {
+    a.categoriesb{
+      display:none;
+    }
+    
+
+  }
+  @media (max-width: 670px) {
+    
+     a.itemsb{
+      display:none;
+    }
+
+  }
+  @media (max-width: 556px) {
+    
+     a.aboutb{
+      margin:0px;
+      padding:0px;
+      width: 40px;
+    }
+
+  }
+
+  @media (max-width: 550px) {
+    
+     a.aboutb{
+      display:none;
+    }
+    
+
   }
   
-  /* Mobile */
-  @media (max-width: 800px) {
-    .navbar {
-      height: 110px;
-    }
-  
-    .navbar .flex {
-      flex-direction: column;
-    }
-  
-    .navbar ul {
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-  
-  }
 </style>
